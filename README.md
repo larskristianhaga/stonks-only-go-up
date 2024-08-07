@@ -1,0 +1,1 @@
+# stonks-only-go-up
