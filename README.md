@@ -15,6 +15,9 @@ Needs to be installed manually for now.
 * ???
 * Profit
 
+### Image
 
 It then should look like this:
+
+
 ![Example image](example-image.png)
