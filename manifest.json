@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Stonks Only Go Up",
+  "version": "1.0",
+  "description": "Removes the sell button from Nordnet, since Stonks can only go up! 💎👐",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://nordnet.no/*",
+        "https://*.nordnet.no/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
