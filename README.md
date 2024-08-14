@@ -18,7 +18,11 @@ Needs to be installed manually for now.
 ### Images
 
 It should go from looking like this:
+
+
 ![Example image before](example-image-before.png)
 
 To look like this:
+
+
 ![Example image result](example-image-result.png)
