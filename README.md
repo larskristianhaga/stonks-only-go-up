@@ -1,6 +1,6 @@
-# stonks-only-go-up
+# Stonks only go up
 
-An chrome extension that removes the sell button on Nordnet, since stonks only go up!
+An chrome extension that removes the sell button on Nordnet. Why? Since stonks only go up!
 
 Only works on Nordnet.no due to whitelisting of domain name.
 
@@ -15,9 +15,10 @@ Needs to be installed manually for now.
 * ???
 * Profit
 
-### Image
+### Images
 
-It then should look like this:
+It should go from looking like this:
+![Example image before](example-image-before.png)
 
-
-![Example image](example-image.png)
+To look like this:
+![Example image result](example-image-result.png)
