@@ -5,6 +5,16 @@ function replaceSellFundButton() {
 
     if (sellLink) {
         const span = document.createElement('span');
+
+        // If the button has a parent div, then it's a bigger button
+        // So we need to add some more CSS for it to look good.
+        if (sellLink.parentElement.tagName === 'DIV') {
+            sellLink.parentElement.style.display = 'flex';
+            sellLink.parentElement.style.justifyContent = 'center';
+            sellLink.parentElement.style.alignItems = 'center';
+            span.style.fontSize = '2rem';
+        }
+
         span.textContent = '💎👐';
         span.style.cursor = 'not-allowed';
 
