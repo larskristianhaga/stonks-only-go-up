@@ -1,7 +1,7 @@
 // Function to replace the sell button
 function replaceSellFundButton() {
 
-    const sellLink = document.querySelector('a[href*="sell"]');
+    const sellLink = document.querySelector('a[href*="order/sell"]');
 
     if (sellLink) {
         const span = document.createElement('span');
