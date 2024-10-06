@@ -1,57 +1,37 @@
 // Function to replace the sell button
 function replaceSellFundButton() {
-
     const stocksPageSellLink = document.querySelector('a[href*="order/sell"]');
-
     if (stocksPageSellLink) {
-        const span = document.createElement('span');
-
-        // If the button has a parent div, then it's a bigger button
-        // So we need to add some more CSS for it to look good.
-        if (stocksPageSellLink.parentElement.tagName === 'DIV') {
-            stocksPageSellLink.parentElement.style.display = 'flex';
-            stocksPageSellLink.parentElement.style.justifyContent = 'center';
-            stocksPageSellLink.parentElement.style.alignItems = 'center';
-            span.style.fontSize = '2rem';
-        }
-
-        span.textContent = '💎👐';
-        span.style.cursor = 'not-allowed';
-
-        // Add something to on hover
-        span.setAttribute('title', 'We do not support paper hands people. 💎👐');
-
-        stocksPageSellLink.replaceWith(span);
+        replaceSellLink(stocksPageSellLink);
     }
 
     const accountPageSellLink = document.querySelector('[data-testid="sell-fund-button"]');
-
     if (accountPageSellLink) {
-        const span = document.createElement('span');
-
-        span.textContent = '💎👐';
-        span.style.cursor = 'not-allowed';
-
-        // Add something to on hover
-        span.setAttribute('title', 'We do not support paper hands people. 💎👐');
-
-        accountPageSellLink.replaceWith(span);
+        replaceSellLink(accountPageSellLink);
     }
 
     const watchlistPageSellLink = document.querySelector('a[href*="ordersidepanel=%2Fsell"]');
-
     if (watchlistPageSellLink) {
-        const span = document.createElement('span');
+        replaceSellLink(watchlistPageSellLink);
+    }
+}
 
-        span.textContent = '💎👐';
-        span.style.cursor = 'not-allowed';
+function replaceSellLink(link) {
+    const span = document.createElement('span');
 
-        // Add something to on hover
-        span.setAttribute('title', 'We do not support paper hands people. 💎👐');
+    span.textContent = '💎👐';
+    span.style.cursor = 'not-allowed';
+    span.setAttribute('title', 'We do not support paper hands people. 💎👐');
 
-        watchlistPageSellLink.replaceWith(span);
+    // If the parent element is a div, then center the emoji
+    if (link.parentElement.tagName === 'DIV') {
+        link.parentElement.style.display = 'flex';
+        link.parentElement.style.justifyContent = 'center';
+        link.parentElement.style.alignItems = 'center';
+        span.style.fontSize = '2rem';
     }
 
+    link.replaceWith(span);
 }
 
 // Function to observe DOM changes
