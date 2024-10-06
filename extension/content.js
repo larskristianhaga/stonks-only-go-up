@@ -1,17 +1,17 @@
 // Function to replace the sell button
 function replaceSellFundButton() {
 
-    const sellLink = document.querySelector('a[href*="order/sell"]');
+    const stocksPageSellLink = document.querySelector('a[href*="order/sell"]');
 
-    if (sellLink) {
+    if (stocksPageSellLink) {
         const span = document.createElement('span');
 
         // If the button has a parent div, then it's a bigger button
         // So we need to add some more CSS for it to look good.
-        if (sellLink.parentElement.tagName === 'DIV') {
-            sellLink.parentElement.style.display = 'flex';
-            sellLink.parentElement.style.justifyContent = 'center';
-            sellLink.parentElement.style.alignItems = 'center';
+        if (stocksPageSellLink.parentElement.tagName === 'DIV') {
+            stocksPageSellLink.parentElement.style.display = 'flex';
+            stocksPageSellLink.parentElement.style.justifyContent = 'center';
+            stocksPageSellLink.parentElement.style.alignItems = 'center';
             span.style.fontSize = '2rem';
         }
 
@@ -21,10 +21,37 @@ function replaceSellFundButton() {
         // Add something to on hover
         span.setAttribute('title', 'We do not support paper hands people. 💎👐');
 
-        sellLink.replaceWith(span);
-    } else {
-        console.log("Sell link was not found.");
+        stocksPageSellLink.replaceWith(span);
     }
+
+    const accountPageSellLink = document.querySelector('[data-testid="sell-fund-button"]');
+
+    if (accountPageSellLink) {
+        const span = document.createElement('span');
+
+        span.textContent = '💎👐';
+        span.style.cursor = 'not-allowed';
+
+        // Add something to on hover
+        span.setAttribute('title', 'We do not support paper hands people. 💎👐');
+
+        accountPageSellLink.replaceWith(span);
+    }
+
+    const watchlistPageSellLink = document.querySelector('a[href*="ordersidepanel=%2Fsell"]');
+
+    if (watchlistPageSellLink) {
+        const span = document.createElement('span');
+
+        span.textContent = '💎👐';
+        span.style.cursor = 'not-allowed';
+
+        // Add something to on hover
+        span.setAttribute('title', 'We do not support paper hands people. 💎👐');
+
+        watchlistPageSellLink.replaceWith(span);
+    }
+
 }
 
 // Function to observe DOM changes
