@@ -1,6 +1,6 @@
 # Stonks only go up
 
-An chrome extension that removes the sell button on Nordnet. Why? Since stonks only go up!
+A Chrome extension that removes the sell button on Nordnet. Why? Since stonks only go up!
 
 Only works on Nordnet.no due to whitelisting of domain name.
 
