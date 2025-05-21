@@ -16,7 +16,13 @@
     {
       "matches": [
         "https://nordnet.no/*",
-        "https://*.nordnet.no/*"
+        "https://*.nordnet.no/*",
+        "https://nordnet.se/*",
+        "https://*.nordnet.se/*",
+        "https://nordnet.fi/*",
+        "https://*.nordnet.fi/*",
+        "https://nordnet.de/*",
+        "https://*.nordnet.de/*"
       ],
       "js": [
         "content.js"
