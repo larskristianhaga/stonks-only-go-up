@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Stonks Only Go Up",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Removes the sell button from Nordnet, since Stonks can only go up! 💎👐",
    "icons": {
       "16": "icon16.png",
