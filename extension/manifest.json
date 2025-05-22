@@ -21,8 +21,8 @@
         "https://*.nordnet.se/*",
         "https://nordnet.fi/*",
         "https://*.nordnet.fi/*",
-        "https://nordnet.de/*",
-        "https://*.nordnet.de/*"
+        "https://nordnet.dk/*",
+        "https://*.nordnet.dk/*"
       ],
       "js": [
         "content.js"
