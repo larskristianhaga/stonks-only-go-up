@@ -1,6 +1,6 @@
 // Function to replace the sell button
 function replaceSellFundButton() {
-    const stocksPageSellLink = document.querySelector('a[href*="order/sell"]');
+    const stocksPageSellLink = document.querySelector('a[href*="order/sell"], a[href*="order/salj"], a[href*="ordre/saelge"], a[href*="toimeksianto/myy"]');
     if (stocksPageSellLink) {
         replaceSellLink(stocksPageSellLink);
     }

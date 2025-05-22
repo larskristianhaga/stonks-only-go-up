@@ -2,7 +2,7 @@
 
 A Chrome extension that removes the sell button on Nordnet. Why? Since stonks only go up!
 
-Only works on Nordnet.no due to whitelisting of domain name.
+Works only on Nordnet sites, `.no`, `.se`, `.fi`, and `.dk` due to whitelisting of domain name.
 
 ### Installation
 
